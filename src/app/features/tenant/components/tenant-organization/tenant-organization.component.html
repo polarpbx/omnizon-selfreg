@@ -1,0 +1,43 @@
+<div class="alert alert-danger" hidden>
+  validation
+</div>
+
+<div class="ms-3 me-3 tenant-container">
+  <div class="text-center mb-5">
+    <h3>Dodatni podatci tenat accaunt za organizaciju</h3>
+  </div>
+  <form [formGroup]="organizationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group mt-4 mb-1">
+      <input type="text" class="form-control" placeholder="Organization" formControlName="name">
+    </div>
+    <div class="form-group  mt-4 mb-1">
+      <input type="text" class="form-control" placeholder="Porezni broj [HR12345678901]" formControlName="porezniBroj">
+    </div>
+    <div class="form-group  mt-4 mb-1">
+      <input type="text" class="form-control" placeholder="Adresa" formControlName="adresa">
+    </div>
+    <div class="form-group  mt-4 mb-1">
+      <input type="text" class="form-control" placeholder="Drzava" formControlName="drzava">
+    </div>
+    <div class="form-group  mt-4 mb-1">
+      <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" formControlName="email">
+    </div>
+    <div class="form-group  mt-4 mb-1">
+      <input type="file" class="form-control" value="file" formControlName="file">
+    </div>
+
+    
+    <div class="text-center">
+      <div class="row justify-content-center mt-4">
+        <div class="col">
+          <button type="submit" class="btn btn-primary float-end" style="width: 110px;" (click)="redirect()">
+            {{"button-next"|translate}}
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>
+

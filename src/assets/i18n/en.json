@@ -1,0 +1,59 @@
+{
+    "button-next":"Next",
+    "button-back":"Back",
+    "button-finish":"Finish",
+    "button-send":"Send",
+    "button-confirm":"Confirm",
+
+    "tenant-account-title": "Create tenant account",
+    "tenant-account-organization": "Organization",
+    "tenant-account-organization-validation-required": "Please enter organization",
+    "tenant-account-organization-validation-minlength": "Minimal length is",
+    "tenant-account-email": "Email",
+    "tenant-account-email-validation-required": "Please enter email",
+    "tenant-account-email-validation-email": "Invalid email",
+    "tenant-account-password": "Passwort",
+    "tenant-account-password-validation-required": "Please enter password",
+    "tenant-account-password-validation-minlength": "Minimal length is",
+    "tenant-account-confirm-password": "Confirm Password",
+    "tenant-account-confirm-password-validation-required": "...",
+    "tenant-account-confirm-password-validation-minlength": "...",
+    "tenant-account-accept-condition": "Accept the terms",
+    "tenant-account-accept-condition-validation-required": "Please accept conditions",
+
+    "tenant-confirm-title": "Email confirmation",
+    "tenant-confirm-content":"Confirm your email to complete account opening and setup",
+
+    "tenant-organization-title":"",
+    "tenant-organization-title-validation":"",
+    "tenant-organization-tax":"",
+    "tenant-organization-tax-validation":"",
+    "tenant-organization-address":"",
+    "tenant-organization-address-validation":"",
+    "tenant-organization-state":"",
+    "tenant-organization-state-validation":"",
+    "tenant-organization-email":"",
+    "tenant-organization-email-validation":"",
+
+    "agremment-organization-first-title":"",
+    "agremment-organization-second-title":"",
+    "agremment-organization-doctype":"",
+    "agremment-organization-doctype-uml":"",
+    "agremment-organization-doctype-edifact":"",
+    "agremment-organization-accpoint":"",
+    "agremment-organization-accpoint-omnizon":"",
+    "agremment-organization-accpoint-own":"",
+    "agremment-organization-accpoint-own-route":"",
+
+    "agremment-document-direction-title":"",
+    "agremment-document-direction-partner-first":"",
+    "agremment-document-direction-order":"",
+    "agremment-document-direction-order-confirmation":"",
+    "agremment-document-direction-shipment":"",
+    "agremment-document-direction-receipt":"",
+    "agremment-document-direction-invoice":"",
+
+    "agremment-confirm-title":""
+
+  }
+  

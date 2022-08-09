@@ -1,0 +1,58 @@
+{
+    "button-next":"Следећи",
+    "button-back":"Назад",
+    "button-finish":"Заврши",
+    "button-send":"Пошаљи",
+    "button-confirm":"Потврди",
+
+    "tenant-account-title": "Креирајте налог станара",
+    "tenant-account-organization": "Организација",
+    "tenant-account-organization-validation-required": "Унесите организацију",
+    "tenant-account-organization-validation-minlength": "Минимална дужина је",
+    "tenant-account-email": "Емаил",
+    "tenant-account-email-validation-required": "Унесите емаил",
+    "tenant-account-email-validation-email": "Неважећа е-маил",
+    "tenant-account-password": "Лозинка",
+    "tenant-account-password-validation-required": "Молим вас укуцајте лозинку",
+    "tenant-account-password-validation-minlength": "Минимална дужина је",
+    "tenant-account-confirm-password": "Пассворт бестатиген",
+    "tenant-account-confirm-password-validation-required": "...",
+    "tenant-account-confirm-password-validation-minlength": "...",
+    "tenant-account-accept-condition": "Акзептиерен Сие дие Бедингунген",
+    "tenant-account-accept-condition-validation-required": "Молимо прихватите услове",
+
+    "tenant-confirm-title": "Имејл потврда",
+    "tenant-confirm-content":"Потврдите свој е-маил како би сте завршили отварање и подесавање свог рачуна",
+
+    "tenant-organization-title":"",
+    "tenant-organization-title-validation":"",
+    "tenant-organization-tax":"",
+    "tenant-organization-tax-validation":"",
+    "tenant-organization-address":"",
+    "tenant-organization-address-validation":"",
+    "tenant-organization-state":"",
+    "tenant-organization-state-validation":"",
+    "tenant-organization-email":"",
+    "tenant-organization-email-validation":"",
+
+    "agremment-organization-first-title":"",
+    "agremment-organization-second-title":"",
+    "agremment-organization-doctype":"",
+    "agremment-organization-doctype-uml":"",
+    "agremment-organization-doctype-edifact":"",
+    "agremment-organization-accpoint":"",
+    "agremment-organization-accpoint-omnizon":"",
+    "agremment-organization-accpoint-own":"",
+    "agremment-organization-accpoint-own-route":"",
+
+    "agremment-document-direction-title":"",
+    "agremment-document-direction-partner-first":"",
+    "agremment-document-direction-order":"",
+    "agremment-document-direction-order-confirmation":"",
+    "agremment-document-direction-shipment":"",
+    "agremment-document-direction-receipt":"",
+    "agremment-document-direction-invoice":"",
+
+    "agremment-confirm-title":""
+  }
+  

@@ -1,0 +1,151 @@
+<div class="ms-3 me-3">
+  <div class="text-center mb-5">
+    <h2> {{'tenant-account-title' | translate}}</h2>
+  </div>
+
+  <form [formGroup]="tenantForm" (ngSubmit)="onSubmit()" class="was-validate">
+
+
+    <div class="form-group mt-4 mb-1">
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example" formControlName="language"
+        (change)="onChangeLanguage()">
+        <option value="en">English</option>
+        <option value="hr">Croatian</option>
+        <option value="sl">Slovenian</option>
+        <option value="sr">Serbian</option>
+        <option value="de">German</option>
+      </select>
+    </div>
+
+
+    <div class="form-group mt-4 mb-1">
+      <input type="text" class="form-control" placeholder="{{'tenant-account-organization'| translate}}"
+        name="organization"
+        [ngClass]="tenantForm.controls['organization'].touched?tenantForm.controls['organization'].valid?'is-valid':'is-invalid':''"
+        formControlName="organization">
+    </div>
+
+    <div *ngIf="tenantForm.controls['organization'].invalid &&
+      (tenantForm.controls['organization'].dirty || 
+      tenantForm.controls['organization'].touched)" class="alert alert-danger" role="alert">
+      <div>
+        <div *ngIf="tenantForm.controls['organization'].errors?.['required']">
+          {{'tenant-account-organization-validation-required' | translate}}
+        </div>
+        <div *ngIf="tenantForm.controls['organization'].errors?.['minlength']?.requiredLength">
+          {{'tenant-account-organization-validation-minlength' | translate}}
+          {{tenantForm.controls['organization'].errors?.['minlength'].requiredLength}}
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-group mt-4 mb-1">
+      <input type="email" class="form-control" aria-describedby="emailHelp"
+        placeholder="{{'tenant-account-email'| translate}}" name="email"
+        [ngClass]="tenantForm.controls['email'].touched?tenantForm.controls['email'].valid?'is-valid':'is-invalid':''"
+        formControlName="email">
+    </div>
+
+    <div *ngIf="tenantForm.controls['email'].invalid &&
+      (tenantForm.controls['email'].dirty || 
+      tenantForm.controls['email'].touched)" class="alert alert-danger" role="alert">
+      <div>
+        <div *ngIf="tenantForm.controls['email'].errors?.['required']">
+          {{'tenant-account-email-validation-required' | translate}}
+        </div>
+        <div *ngIf="tenantForm.controls['email'].errors?.['email']">
+          {{'tenant-account-email-validation-email' | translate}}
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group mt-4 mb-1">
+      <input type="password" class="form-control" placeholder="{{'tenant-account-password'| translate}}" name="password"
+        formControlName="password"
+        [ngClass]="tenantForm.controls['password'].touched?tenantForm.controls['password'].valid?'is-valid':'is-invalid':''">
+    </div>
+
+    <div *ngIf="tenantForm.controls['password'].invalid &&
+      (tenantForm.controls['password'].dirty || 
+      tenantForm.controls['password'].touched)" class="alert alert-danger" role="alert">
+      <div>
+        <div *ngIf="tenantForm.controls['password'].errors?.['required']">
+          {{'tenant-account-password-validation-required' | translate}}
+        </div>
+        <div *ngIf="tenantForm.controls['password'].errors?.['minlength']?.requiredLength">
+          {{'tenant-account-password-validation-minlength' | translate}}
+          {{tenantForm.controls['password'].errors?.['minlength'].requiredLength}}
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-group mt-4 mb-1">
+      <input type="password" class="form-control" placeholder="{{'tenant-account-confirm-password'| translate}}"
+        name="passwordConfirm" formControlName="passwordConfirm"
+        [ngClass]="tenantForm.controls['passwordConfirm'].touched?tenantForm.controls['passwordConfirm'].valid?'is-valid':'is-invalid':''">
+    </div>
+
+    <div *ngIf="tenantForm.controls['password'].invalid &&
+      (tenantForm.controls['passwordConfirm'].dirty || 
+      tenantForm.controls['passwordConfirm'].touched)" class="alert alert-danger" role="alert">
+      <div>
+        <div *ngIf="tenantForm.controls['passwordConfirm'].errors?.['required']">
+          {{'tenant-account-accept-condition-validation-required' | translate}}
+
+        </div>
+        <div *ngIf="tenantForm.controls['passwordConfirm'].errors?.['minlength']?.requiredLength">
+          {{'tenant-account-confirm-password-validation-minlength' | translate}}
+          {{tenantForm.controls['passwordConfirm'].errors?.['minlength'].requiredLength}}
+        </div>
+      </div>
+    </div>
+
+    <div class="form-check mt-4 mb-1">
+      <input type="checkbox" class="form-check-input" id="confirmConditions" name="confirmConditions"
+        formControlName="confirmConditions"
+        [ngClass]="tenantForm.controls['confirmConditions'].touched?tenantForm.controls['confirmConditions'].valid?'is-valid':'is-invalid':''">
+      <label class="form-check-label" for="confirmConditions">{{'tenant-account-accept-condition'| translate}}</label>
+      <a href="#" class="ms-2">
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </a>
+      <div>
+
+      </div>
+    </div>
+
+    <div *ngIf="tenantForm.controls['confirmConditions'].invalid &&
+      (tenantForm.controls['confirmConditions'].dirty || 
+      tenantForm.controls['confirmConditions'].touched)" class="alert alert-danger" role="alert">
+      <div>
+        <div *ngIf="tenantForm.controls['confirmConditions'].errors?.['required']">
+          {{'tenant-account-accept-condition-validation-required'| translate}}
+        </div>
+      </div>
+    </div>
+
+    <!-- (reset)="handleReset()"
+    (expire)="handleExpire()"
+    (load)="handleLoad()"
+    (success)="handleSuccess($event)"
+    [useGlobalDomain]="false"
+    [size]="size"
+    [hl]="lang"
+    [theme]="theme"
+    [type]="type" -->
+    <div class="text-center form-group mt-4 mb-1">
+      <ngx-recaptcha2 #captchaElem [siteKey]="siteKey" [hl]="tenantForm.value.language" formControlName="recaptcha">
+      </ngx-recaptcha2>
+    </div>
+
+
+    <div class="text-center mt-3 mb-1">
+      <button type="submit" class="btn btn-primary " style="width: 110px;" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">{{"button-send"|translate}}</button>
+      <!-- [disabled]="tenantForm.valid" -->
+    </div>
+
+  </form>
+</div>
+<app-tenant-confirm></app-tenant-confirm>
