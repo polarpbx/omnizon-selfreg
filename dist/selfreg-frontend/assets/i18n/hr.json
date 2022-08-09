@@ -1,0 +1,58 @@
+{
+    "button-next":"Nastavi",
+    "button-back":"Natrag",
+    "button-finish":"Završi",
+    "button-send":"Pošalji",
+    "button-confirm":"Potvrdi",
+
+    "tenant-account-title": "Napravite tenant račun",
+    "tenant-account-organization": "Organizacija",
+    "tenant-account-organization-validation-required": "Unesite organizaciju",
+    "tenant-account-organization-validation-minlength": "Minimalna dužina je",
+    "tenant-account-email": "Email",
+    "tenant-account-email-validation-required": "Unesite email",
+    "tenant-account-email-validation-email": "Nevažeći email",
+    "tenant-account-password": "Lozinka",
+    "tenant-account-password-validation-required": "Unesite lozinku",
+    "tenant-account-password-validation-minlength": "Minimalna dužina je",
+    "tenant-account-confirm-password": "Potvrdi lozinku",
+    "tenant-account-confirm-password-validation-required": "...",
+    "tenant-account-confirm-password-validation-minlength": "...",
+    "tenant-account-accept-condition": "Prihvatite uvjete",
+    "tenant-account-accept-condition-validation-required": "Molimo prihvatite uvjete",
+
+    "tenant-confirm-title": "Email confirmation",
+    "tenant-confirm-content":"Potvrdite svoju e-poštu kako biste dovršili otvaranje i postavljanje računa",
+
+    "tenant-organization-title":"",
+    "tenant-organization-title-validation":"",
+    "tenant-organization-tax":"",
+    "tenant-organization-tax-validation":"",
+    "tenant-organization-address":"",
+    "tenant-organization-address-validation":"",
+    "tenant-organization-state":"",
+    "tenant-organization-state-validation":"",
+    "tenant-organization-email":"",
+    "tenant-organization-email-validation":"",
+
+    "agremment-organization-first-title":"",
+    "agremment-organization-second-title":"",
+    "agremment-organization-doctype":"",
+    "agremment-organization-doctype-uml":"",
+    "agremment-organization-doctype-edifact":"",
+    "agremment-organization-accpoint":"",
+    "agremment-organization-accpoint-omnizon":"",
+    "agremment-organization-accpoint-own":"",
+    "agremment-organization-accpoint-own-route":"",
+
+    "agremment-document-direction-title":"",
+    "agremment-document-direction-partner-first":"",
+    "agremment-document-direction-order":"",
+    "agremment-document-direction-order-confirmation":"",
+    "agremment-document-direction-shipment":"",
+    "agremment-document-direction-receipt":"",
+    "agremment-document-direction-invoice":"",
+
+    "agremment-confirm-title":""
+  }
+  
