@@ -5,7 +5,7 @@
     "button-send":"Pošalji",
     "button-confirm":"Potvrdi",
 
-    "tenant-account-title": "Napravite tenant račun",
+    "tenant-account-title": "Otvaranje tenant računa",
     "tenant-account-organization": "Organizacija",
     "tenant-account-organization-validation-required": "Unesite organizaciju",
     "tenant-account-organization-validation-minlength": "Minimalna dužina je",

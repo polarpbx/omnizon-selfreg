@@ -5,11 +5,11 @@
     "button-send":"Send",
     "button-confirm":"Confirm",
 
-    "tenant-account-title": "Create tenant account",
+    "tenant-account-title": "Create tenant",
     "tenant-account-organization": "Organization",
     "tenant-account-organization-validation-required": "Please enter organization",
     "tenant-account-organization-validation-minlength": "Minimal length is",
-    "tenant-account-email": "Email",
+    "tenant-account-email": "Your e-mail address for Omnizon admin tenant account",
     "tenant-account-email-validation-required": "Please enter email",
     "tenant-account-email-validation-email": "Invalid email",
     "tenant-account-password": "Passwort",
@@ -18,7 +18,7 @@
     "tenant-account-confirm-password": "Confirm Password",
     "tenant-account-confirm-password-validation-required": "...",
     "tenant-account-confirm-password-validation-minlength": "...",
-    "tenant-account-accept-condition": "Accept the terms",
+    "tenant-account-accept-condition": "Accepting Terms & Conditions",
     "tenant-account-accept-condition-validation-required": "Please accept conditions",
 
     "tenant-confirm-title": "Email confirmation",
